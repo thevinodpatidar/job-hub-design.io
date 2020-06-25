@@ -67,12 +67,12 @@ $light-brown: #f8f1ff;
   background: #f0e6e2;
   @include for-phone-only{
     background:#f0e6e2;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
   }
   @include for-tablet-portrait-up{
     background:#f0e6e2;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
   }
   .nav {
