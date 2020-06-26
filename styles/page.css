@@ -43,7 +43,6 @@
 @media (max-width: 599px) {
   .header {
     background: #f0e6e2;
-    width: 100%;
     overflow-x: hidden;
   }
 }
@@ -51,7 +50,6 @@
 @media (min-width: 600px) {
   .header {
     background: #f0e6e2;
-    width: 100%;
     overflow-x: hidden;
   }
 }
@@ -174,11 +172,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 450px;
 }
 
 @media (max-width: 599px) {
   .header .hero .hero__img {
-    width: 400px;
+    width: 300px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -396,6 +395,10 @@
   font-weight: 300;
 }
 
+.explore__cards:last-of-type {
+  margin-right: 0;
+}
+
 .jobs {
   background: #f0e6e2;
   padding: 6rem;
@@ -443,7 +446,7 @@
 
 @media (max-width: 599px) {
   .jobs .jobs__heading .jobs__heading__text {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -521,13 +524,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1rem;
   opacity: .6;
 }
@@ -610,7 +610,6 @@
 
 @media (max-width: 599px) {
   .startups .startup__image__1 {
-    width: 300px;
     display: none;
   }
 }

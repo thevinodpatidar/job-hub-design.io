@@ -67,12 +67,12 @@ $light-brown: #f8f1ff;
   background: #f0e6e2;
   @include for-phone-only{
     background:#f0e6e2;
-    width: 100vw;
+    // width: 100vw;
     overflow-x: hidden;
   }
   @include for-tablet-portrait-up{
     background:#f0e6e2;
-    width: 100vw;
+    // width: 100vw;
     overflow-x: hidden;
   }
   .nav {
@@ -150,8 +150,9 @@ $light-brown: #f8f1ff;
     }
     .hero__img{
       display:  flex;
+      width : 450px;
       @include for-phone-only{
-        width: 400px;
+        width: 300px;
         align-items: center;
       }
     }
@@ -295,6 +296,10 @@ $light-brown: #f8f1ff;
         font-weight: 300;
       }
     }
+
+    &:last-of-type{
+      margin-right: 0;
+    }
   }
 }
 
@@ -324,7 +329,7 @@ $light-brown: #f8f1ff;
       width: 25%;
       font-weight: 400;
       @include for-phone-only{
-        width: 100vw;
+        width: 100%;
       }
     }
 
@@ -374,8 +379,8 @@ $light-brown: #f8f1ff;
 
       .job__details {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        // justify-content: space-between;
         font-size: 1rem;
         opacity: .6;
 
@@ -433,7 +438,6 @@ $light-brown: #f8f1ff;
     left: 53vw;
     z-index: 99;
     @include for-phone-only{
-      width: 300px;
       display: none;
     }
   }
